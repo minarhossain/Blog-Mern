@@ -1,0 +1,2 @@
+Netlify live live link:  https://gilded-cocada-74b2ed.netlify.app/
+Github link: https://github.com/minarhossain/Blog-Mern
