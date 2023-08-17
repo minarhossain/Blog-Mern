@@ -22,7 +22,7 @@ const CreateForm = () => {
         setLoading(true);
 
         try {
-            const res = await axios.post('http://localhost:5000/api/v1/createBlog', formValue);
+            const res = await axios.post('https://blog-mern-steel.vercel.app/api/v1/createBlog', formValue);
 
             if (res.status === 200) {
                 // toast.success("Data Inserted Successfully!")

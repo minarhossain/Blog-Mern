@@ -26,7 +26,7 @@ export const Create = (productName, productCode, productImage, unitPrice, quanti
 };
 
 export const Read = () => {
-    const url = "http://localhost:5000/api/v1/readProduct";
+    const url = "https://blog-mern-steel.vercel.app/api/v1/readProduct";
     return axios.get(url)
         .then(res => {
             if (res.status === 200) {
@@ -69,7 +69,7 @@ export const Update = (id) => {
 
 
 export const Delete = (id) => {
-    const url = "http://localhost:5000/api/v1/deleteProduct/" + id;
+    const url = "https://blog-mern-steel.vercel.app/api/v1/deleteProduct/" + id;
     return axios.get(url)
         .then(res => {
             if (res.status === 200) {

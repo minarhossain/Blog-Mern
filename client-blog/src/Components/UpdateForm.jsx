@@ -18,7 +18,7 @@ const UpdateForm = () => {
     //     setFormValue({ ...formValue, [property]: value });
     // }
     useEffect(() => {
-        axios.get('http://localhost:5000/api/v1/readBlogById/' + id)
+        axios.get('https://blog-mern-steel.vercel.app/api/v1/readBlogById/' + id)
             .then(res => {
                 console.log(res.data.data);
                 setValues({ ...values, title: res.data.data.title, content: res.data.data.content, image: res.data.data.image, author: res.data.data.author })
@@ -29,7 +29,7 @@ const UpdateForm = () => {
     const navigate = useNavigate();
 
     const onSubmit = () => {
-        axios.post('http://localhost:5000/api/v1/updateBlog/' + id, values)
+        axios.post('https://blog-mern-steel.vercel.app/api/v1/updateBlog/' + id, values)
             .then(res => {
                 console.log(res.data.data);
                 // setValues({ ...values, title: res.data.data.title, content: res.data.data.content, image: res.data.data.image, author: res.data.data.author })

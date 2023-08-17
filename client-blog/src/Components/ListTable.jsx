@@ -13,7 +13,7 @@ const ListTable = () => {
 
     const fetchData = async () => {
         try {
-            const response = await axios.get('http://localhost:5000/api/v1/readBlog');
+            const response = await axios.get('https://blog-mern-steel.vercel.app/api/v1/readBlog');
 
             setDataList(response.data['data']);
         } catch (error) {
@@ -23,7 +23,7 @@ const ListTable = () => {
 
     const deleteProduct = async (id) => {
         try {
-            await axios.delete(`http://localhost:5000/api/v1/deleteBlog/${id}`);
+            await axios.delete(`https://blog-mern-steel.vercel.app/api/v1/deleteBlog/${id}`);
             toast("Delete Success");
             fetchData()
         } catch (error) {

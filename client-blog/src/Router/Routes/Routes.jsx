@@ -28,7 +28,7 @@ export const router = createBrowserRouter([
             {
                 path: '/readBlogById/:id',
                 element: <NewsDetails></NewsDetails>,
-                loader: ({ params }) => fetch(`http://localhost:5000/api/v1/readBlogById/${params.id}`)
+                loader: ({ params }) => fetch(`https://blog-mern-steel.vercel.app/api/v1/readBlogById/${params.id}`)
             }
         ]
     }
