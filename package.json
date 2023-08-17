@@ -27,5 +27,5 @@
     "nodemon": "^3.0.1",
     "xss-clean": "^0.1.4"
   },
-  "proxy": "http://localhost:5000/"
+  "proxy": "https://blog-mern-steel.vercel.app/"
 }
